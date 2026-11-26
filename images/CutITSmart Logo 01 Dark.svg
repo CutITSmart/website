@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1400"
+     height="260"
+     viewBox="0 0 1400 260">
+
+  <!-- Transparent background -->
+
+  <!-- Frame -->
+
+  <rect
+      x="30"
+      y="50"
+      width="150"
+      height="150"
+      rx="24"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="6"/>
+
+  <!-- Left cells -->
+
+  <rect x="58" y="78" width="24" height="24" rx="4" fill="#174990"/>
+  <rect x="58" y="148" width="24" height="24" rx="4" fill="#174990"/>
+
+  <!-- Right cells -->
+
+  <rect x="126" y="78" width="24" height="24" rx="4" fill="#174990"/>
+  <rect x="126" y="148" width="24" height="24" rx="4" fill="#174990"/>
+
+  <!-- Orchestration hub -->
+
+  <circle
+      cx="105"
+      cy="125"
+      r="12"
+      fill="#FFFFFF"/>
+
+  <!-- Primary active workflow -->
+
+  <path
+      d="
+        M82 90 H98
+        M70 102 V148
+        M82 160 H98
+      "
+      fill="none"
+      stroke="#174990"
+      stroke-width="10"
+      stroke-linecap="round"/>
+
+  <!-- Secondary active system links -->
+
+  <path
+      d="
+        M96 90 H130
+        M96 160 H130
+      "
+      fill="none"
+      stroke="#174990"
+      stroke-width="4"
+      stroke-linecap="round"/>
+
+  <!-- Architectural / latent connectivity -->
+
+  <path
+      d="
+        M117 125 H126
+      "
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="4"
+      stroke-linecap="round"/>
+
+  <!-- Wordmark -->
+
+  <text
+      x="225"
+      y="168"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="122"
+      font-weight="700"
+      letter-spacing="-2">
+
+      <tspan fill="#174990">CutIT</tspan><tspan fill="#FFFFFF">Smart</tspan>
+
+  </text>
+
+</svg>
