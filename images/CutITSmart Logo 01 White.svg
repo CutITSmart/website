@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1400"
+     height="260"
+     viewBox="0 0 1400 260">
+
+  <style>
+
+    :root{
+      --cutit-colour:#FFFFFF;
+      --smart-colour:#64748B;
+    }
+
+    .frame{
+      stroke:var(--smart-colour);
+      stroke-width:6;
+      fill:none;
+    }
+
+    .route{
+      stroke:var(--cutit-colour);
+      stroke-width:10;
+      fill:none;
+      stroke-linecap:round;
+    }
+
+    .route2{
+      stroke:var(--cutit-colour);
+      stroke-width:4;
+      fill:none;
+      stroke-linecap:round;
+    }
+
+    .route3{
+      stroke:var(--smart-colour);
+      stroke-width:4;
+      fill:none;
+      stroke-linecap:round;
+    }
+
+    .cell{
+      fill:var(--cutit-colour);
+    }
+
+    .hub{
+      fill:var(--smart-colour);
+    }
+
+    .wordmark{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:122px;
+      font-weight:700;
+      letter-spacing:-2px;
+    }
+
+  </style>
+
+  <!-- Icon -->
+
+  <rect
+      x="30"
+      y="50"
+      width="150"
+      height="150"
+      rx="24"
+      class="frame"/>
+
+  <!-- Left cells -->
+
+  <rect x="58" y="78"  width="24" height="24" rx="4" class="cell"/>
+  <rect x="58" y="148" width="24" height="24" rx="4" class="cell"/>
+
+  <!-- Right cells -->
+
+  <rect x="126" y="78"  width="24" height="24" rx="4" class="cell"/>
+  <rect x="126" y="148" width="24" height="24" rx="4" class="cell"/>
+
+  <!-- Orchestration hub -->
+
+  <circle
+      cx="105"
+      cy="125"
+      r="12"
+      class="hub"/>
+
+  <!-- Primary active workflow -->
+
+  <path class="route"
+        d="
+          M82 90 H98
+          M70 102 V148
+          M82 160 H98
+        "/>
+
+  <!-- Secondary active system links -->
+
+  <path class="route2"
+        d="
+          M96 90 H130
+          M96 160 H130
+        "/>
+
+  <!-- Architectural / latent connectivity -->
+
+  <path class="route3"
+        d="
+          M117 125 H126
+        "/>
+
+  <!-- Wordmark -->
+
+  <text
+      x="225"
+      y="168"
+      class="wordmark">
+
+      <tspan fill="var(--cutit-colour)">CutIT</tspan><tspan fill="var(--smart-colour)">Smart</tspan>
+
+  </text>
+
+</svg>

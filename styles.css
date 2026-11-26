@@ -30,22 +30,43 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background: linear-gradient(
-        180deg,
-        #ffffff,
-        #f8fafc
-    );
+/* HEADER BAND */
 
+header {
+    background: var(--primary);
     text-align: center;
-    padding: 5rem 0;
+    padding: 2.5rem 0;
 }
 
 .logo {
+    display: block;
     width: 100%;
-    max-width: 520px;
-    margin-bottom: 2rem;
+    max-width: 450px;
+    margin: 0 auto;
 }
+
+/* HERO SECTION */
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 900px;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* TYPOGRAPHY */
 
 h1,
 h2,
@@ -57,7 +78,6 @@ h3 {
 h1 {
     font-size: 3rem;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -75,31 +95,25 @@ p {
     margin-bottom: 1rem;
 }
 
-.hero-text {
-    max-width: 900px;
-    margin: 0 auto 1rem;
-    font-size: 1.25rem;
-}
+/* BUTTONS */
 
 .button {
     display: inline-block;
     margin-top: 1rem;
     padding: 14px 28px;
-
     background: var(--primary);
     color: var(--white);
-
     text-decoration: none;
     border-radius: 8px;
-
     font-weight: 600;
-
-    transition: 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 .button:hover {
     background: #103668;
 }
+
+/* SECTIONS */
 
 .section {
     padding: 5rem 0;
@@ -108,6 +122,8 @@ p {
 .alt-section {
     background: white;
 }
+
+/* CARDS */
 
 .cards {
     display: flex;
@@ -118,26 +134,21 @@ p {
 .card {
     flex: 1;
     min-width: 280px;
-
     background: white;
-
     padding: 2rem;
-
     border-radius: 12px;
-
     border: 1px solid var(--border);
-
-    box-shadow:
-        0 2px 6px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
 .card p {
     margin-bottom: 0;
 }
 
+/* INDUSTRY TAGS */
+
 .industry-list {
     margin-top: 2rem;
-
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -145,17 +156,14 @@ p {
 
 .industry-list span {
     background: white;
-
     padding: 0.75rem 1rem;
-
     border-radius: 999px;
-
     border: 1px solid var(--border);
-
     color: var(--primary);
-
     font-weight: 600;
 }
+
+/* CALL TO ACTION */
 
 .call-to-action {
     text-align: center;
@@ -176,6 +184,8 @@ p {
     background: #f1f5f9;
 }
 
+/* FOOTER */
+
 footer {
     background: white;
     border-top: 1px solid var(--border);
@@ -187,7 +197,13 @@ footer p {
     margin: 0;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
+
+    .logo {
+        max-width: 320px;
+    }
 
     h1 {
         font-size: 2.2rem;
@@ -203,9 +219,5 @@ footer p {
 
     .cards {
         flex-direction: column;
-    }
-
-    .logo {
-        max-width: 360px;
     }
 }
