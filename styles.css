@@ -38,6 +38,10 @@ header {
     padding: 2.5rem 0;
 }
 
+header a {
+    display: inline-block;
+}
+
 .logo {
     display: block;
     width: 100%;
@@ -185,6 +189,15 @@ p {
 }
 
 /* FOOTER */
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 footer {
     background: white;
@@ -195,6 +208,45 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* TABLES   */
+table {
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    padding: 0.25rem 1rem 0.75rem 0;
+}
+
+.contact-details {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.contact-details td {
+    vertical-align: top;
+    padding: 0.5rem 1.5rem 0.5rem 0;
+}
+
+.contact-details td:first-child {
+    font-weight: 600;
+    color: var(--primary);
+    width: 120px;
+}
+
+/* LISTS    */
+ul {
+    margin: 1rem 0 2rem 2rem;
+}
+
+li {
+    margin-bottom: 0.05rem;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 /* RESPONSIVE */
